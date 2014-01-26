@@ -10,7 +10,8 @@ public class Exercicio4 {
    
     int vetor[];
     
-   for(int i; i< num;i++){
+
+    for(int i;i<num; i++){
     
     System.out.println("Insira um valor inteiro:");
     vetor[i]= num;
@@ -20,8 +21,6 @@ public class Exercicio4 {
      System.out.println("resultado final:" +vetor[i]);
       System.out.println("Multiplicacao" +mult);
      
-    }
-   
-    System.out.println("resultado final:" +vetor[i]);
+      }
     }
   }  
