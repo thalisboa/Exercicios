@@ -11,7 +11,7 @@ public class Pilha {
         this.posicaoPilha =-1;
         this.pilha = new Object[10]; //criando uma pilha com 10 posicoes
          
-        }
+     }
     
     public boolean pilhaVazia(){ 
     if (this. posicaoPilha == -1){
@@ -43,14 +43,25 @@ public class Pilha {
         }  
         return this.pilha[this. posicaoPilha --];
          
-      }                                 
-    
+      }                
+      
+      public Object exibeUltimoValor() { 
+        //top 
+       if (this.pilhaVazia()) { 
+       return null; 
+        } 
+        return this.pilha[this.posicaoPilha]; 
+       }
+
       public static void main (String[] args){
           Pilha p = new Pilha();
           
           p.empilhar("Portuguesa");
           p.empilhar("Frango com catupiry");
           p.empilhar(4);
+          p.desempilhar();
+          p.exibeUltimoValor();
+       
           
             while(p.pilhaVazia() == false){
                 System.out.println(p.desempilhar());
